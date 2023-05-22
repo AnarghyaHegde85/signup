@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .maincontainer {
+    /* position:relative;
+    /* width: 700px;  */
+     /* height: 700px;
+     background-color: rgb(190, 22, 61)
+     background-size: cover;  */
+     display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(242, 12, 66);
+  }
+  
+  .container {
+    /* position: absolute;
+     top: 20%;
+    left: 25%;
+    max-width: 550px;
+    height: 500px;
+    padding: 20px;
+    margin: 0 auto; */
+    /* margin-top: 20px; */
+    /* border: 1px solid #ccc;
+    background-color: white;
+    align-items: center; */
+    width: 100%;
+  max-width: 550px;
+  padding: 20px;
+  border: 1px solid #625656;
+  background-color: white;
+  box-shadow:rgba(186, 26, 26, 0.749) 2px 2px 2px 2px;
+  }
+  
+  .header {
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .header h2 {
+    font-weight: 100;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+  }
+  .header p {
+    margin-top: 10px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content:space-between;
+    margin-top: 5%;
+  }
+  
+  .account-button,
+  .personal-button {
+    width: 50% ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+     margin: 0 1px; 
+    background-color: #fff;
+    font-size: 20px;
+  
+  }
+  
+  .account-button.active {
+    background-color: #f5eaea;
+    color: #790689;
+    border-bottom: 5px solid rgb(180, 101, 180);
+  }
+  /* .account-button:hover {
+    /* background-color: #0069d9; */
+    
+  /* } */
+  .personal-button.active {
+    background-color: #f5eaea;
+    color: #790689;
+    border-bottom: 5px solid rgb(180, 101, 180);
+  }
+
+  /* .personal-button:hover{
+    /* background-color: #0069d9;
+    border-top: none;
+    border-left: none;
+    border-right: none; */
+    /* border-bottom: 5px solid rgb(180, 101, 180);
+  } */ */
+  account-form
+  .form-group {
+    margin-bottom: 50px;
+    width: 80%;
+ justify-content: center;
+ text-align: center;
+ 
+  }
+  .form-group input[type="email"],
+  .form-group input[type="tel"],
+  .form-group input[type="text"] {
+   width: 100%;
+   border-top: none;
+    border-left: none;
+    border-right: none;
+    
+  }
+  
+  .input-group {
+    display: flex;
+    margin-bottom: 20px;
+    /* width: 80%; */
+    justify-content:space-around;
+    gap: 2rem;
+  }
+  input:focus{
+  outline: none;
+
+  }
+  .email {
+    /* background-color: #007bff; */
+    /* width: 100%; */
+    margin-bottom: 10px;
+  }
+  
+  .input-group input {
+    flex: 1;
+     margin: 0 1px; 
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 13px;
+  }
+  
+  .submit-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #790689;
+    color: #fff;
+    border-radius: 20px;
+  }
+  
+  .submit-button:hover {
+    background-color: rgb(180, 101, 180);
+  }
+  
+   .email #emailError {
+    color: rgb(95, 84, 84);
+    display:none;
+  } 
+   

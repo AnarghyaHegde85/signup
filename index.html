@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title >SignUp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+  <div class="maincontainer">
+    <div class="container">
+          <div class="header">
+            <h2>Signup</h2>
+            <p>Let's create your account</p>
+          </div>
+          <div class="button-group">
+            <button class="account-button active" onclick="showSection('account-form')">Account</button>
+            <button class="personal-button" onclick="showSection('personal-form')">Personal Info</button>
+          </div>
+          <p>Enter your details below:</p>
+          <form id="account-form">
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text"  placeholder="First Name" required>
+                <input type="text"  placeholder="Last Name" required>
+              </div>
+             <div class="email">
+              <input type="email" name="email" placeholder="Email" required oninput="validateEmail(this)">
+              <span class="error" ></span>
+            </div>
+              <div class="input-group">
+                <input type="password"  placeholder="Password" required>
+                <input type="password"  placeholder="Confirm Password" required>
+              </div>
+              <div class="phone">
+              <input type="tel" name="phone" id="phoneNo" placeholder="Phone Number" required oninput="validatePhone(this)">
+              <span class="error"></span>
+            </div>
+            </div>
+            <button class="submit-button">Next</button>
+          <!-- <button class="submit-button" onclick="showSection('personal-form')">Next</button> -->
+          <!-- <button class="submit-button" onclick="validateAccountForm()">Next</button> -->
+          </form>
+           <form id="personal-form" style="display: none;"> 
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" name="fatherName" placeholder="Father Name" required>
+                <input type="text" name="MotherName"  placeholder="Mother's Name" required>
+              </div>
+              <input type="text" name="Qualification" placeholder="Qualification" required>
+            </div>
+          <!-- <button class="submit-button" onclick="submitForm()" >Next</button> -->
+          <button class="submit-button">Next</button>
+        </form>
+        </div>
+      </div>
+        <script src="script.js"></script>
+  </body>
+</html>
